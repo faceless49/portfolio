@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
-import s from "./Btn.module.scss";
+import {NavLink} from 'react-router-dom';
+import s from './Btn.module.scss';
 
 type BtnPropsType = {
   value: string;
@@ -7,8 +7,8 @@ type BtnPropsType = {
 
 export const Btn = (props: BtnPropsType) => {
   return (
-    <NavLink to={"/contact"} className={s.btn}>
-      {props.value}
+    <NavLink to={'/contact'} className={s.btn}>
+      <span>{props.value}</span>
     </NavLink>
   );
 };

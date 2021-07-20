@@ -1,3 +1,5 @@
+@import "./../../sass/_vars";
+
 
 .navigation_wrap {
   width: 13rem;
@@ -9,5 +11,34 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color:violet;
+  background-color: #181818;
+
+  .menu {
+    &_list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_item {
+      text-align: center;
+      display: block;
+      font-size: 1rem;
+      color: #909096;
+      line-height: 5rem;
+      border-bottom: 1px solid #282828;
+
+      a {
+        cursor: pointer;
+        transition: .3s ease all;
+
+        &:hover {
+          color: $maincolor;
+          transition: .3s ease all;
+
+        }
+      }
+    }
+  }
 }

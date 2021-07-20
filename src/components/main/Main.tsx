@@ -5,6 +5,7 @@ import { Btn } from "../../ui/btn/Btn";
 export const Main = () => {
   return (
     <section className={s.main}>
+      <span className={s.tag}>/html</span>
       <div className={s.main_inner}>
         <h1 className={s.title}>
           Hi,

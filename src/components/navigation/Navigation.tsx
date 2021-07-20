@@ -1,6 +1,6 @@
 import s from "./Navigation.module.scss";
 
-export const Navigation = (props) => {
+export const Navigation = (props: any) => {
   return (
     <div className={s.navigation_wrap}>
       <div className={s.navigation_header}>

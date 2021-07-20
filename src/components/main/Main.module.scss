@@ -1,18 +1,79 @@
+@import "./../../sass/_vars";
+
+
 .main {
   min-height: 100vh;
-  padding: 9rem 3rem;
-  &_inner {
-    .title {
-      font-size: 4rem;
-      line-height: 5rem;
-      font-weight: 700;
-    }
-    .main_descr {
-      font-size: 0.7rem;
-    letter-spacing: 3px;
-    margin-top: 2rem;
-    display: block;
-    color: #8d8d8d;
+  padding: 13rem 5rem;
+  position: relative;
+
+  .tag {
+    position: absolute;
+    top: 2rem;
+    color: $tagColor;
+    left: 4rem;
+    font-size: 1.4rem;
+    font-family: 'La Belle Aurore', cursive;
+
+    &:after {
+      content: '<body>';
+      font-family: 'La Belle Aurore', cursive;
+      color: $tagColor;
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
     }
   }
-}
+
+  &_inner {
+    .title {
+      font-family: Coolvetica;
+      font-size: 6.5rem;
+      line-height: 7rem;
+      position: relative;
+      &:before {
+        content: "<h1>";
+        position: absolute;
+        top: -3rem;
+        color: $tagColor;
+        left: -1rem;
+        font-size: 1.4rem;
+        font-family: "La Belle Aurore", cursive;
+      }
+      &:after {
+        content: "</h1>";
+        position: absolute;
+        bottom: -3rem;
+        color: $tagColor;
+        font-size: 1.4rem;
+        font-family: "La Belle Aurore", cursive;
+      }
+    }
+
+    .main_descr {
+      font-size: 0.9rem;
+      letter-spacing: 3px;
+      margin-top: 2rem;
+      display: block;
+      color: #8d8d8d;
+      position: relative;
+      &:before {
+        content: "<p>";
+        position: absolute;
+        top: -3rem;
+        color: $tagColor;
+        left: -1rem;
+        font-size: 1.4rem;
+        font-family: "La Belle Aurore", cursive;
+      }
+      &:after {
+        content: "</p>";
+        position: absolute;
+        left: -1rem;
+        bottom: -2rem;
+        color: $tagColor;
+        font-size: 1.4rem;
+        font-family: "La Belle Aurore", cursive;
+      }
+      }
+    }
+  }
