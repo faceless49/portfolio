@@ -59,8 +59,8 @@ function App() {
       </section>
       <section className={s.work}>
         <div className={s.work_inner}>
-          <div className="work_column">
-            <h2 className="title">My portfolio</h2>
+          <div className={s.work_column}>
+            <h2 className={s.title}>My portfolio</h2>
             <p className={s.work_descr}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
               dicta culpa atque accusantium repellat id temporibus doloribus
@@ -72,7 +72,7 @@ function App() {
             See github!
           </a>
         </div>
-        <div className="magic_wall">
+        <div className={s.magic_wall}>
           <li></li>
           <li></li>
           <li></li>
@@ -105,6 +105,28 @@ function App() {
           </div>
           <div className={s.about_skills}></div>
         </div>
+      </section>
+      <section className={s.contact}>
+        <div className={s.contact_inner}>
+          <h2 className={s.title}>Contact me</h2>
+          <p className={s.contact_descr}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            earum tempora sit ex? Ea cupiditate quos voluptatem, nam rem rerum?
+            Consequuntur, repudiandae neque eaque autem recusandae explicabo
+            temporibus voluptatum aut?
+          </p>
+          <div className={s.contact_form}>
+            <form action="">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </form>
+          </div>
+        </div>
+        <div className={s.contact_map}></div>
       </section>
     </div>
   );
