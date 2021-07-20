@@ -60,6 +60,29 @@ function App() {
           </a>
         </div>
       </section>
+      <section className={s.work}>
+        <div className={s.work_inner}>
+          <div className="work_column">
+            <h2 className="title">My portfolio</h2>
+            <p className={s.work_descr}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              dicta culpa atque accusantium repellat id temporibus doloribus
+              pariatur placeat quia fugiat, nulla, architecto hic sunt at eius?
+              Incidunt, eveniet eligendi!
+            </p>
+          </div>
+          <a href="#" className={s.btn}>
+            See github!
+          </a>
+        </div>
+        <div className="magic_wall">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </div>
+      </section>
     </div>
   );
 }
