@@ -1,4 +1,6 @@
-import s from "./Main.module.scss";
+import React from "react";
+import s from "../main/Main.module.scss";
+import { Btn } from "../../ui/btn/Btn";
 
 export const Main = () => {
   return (
@@ -7,16 +9,14 @@ export const Main = () => {
         <h1 className={s.title}>
           Hi,
           <br />
-          I'm Egor
+          I'm Egor,
           <br />
           web developer
         </h1>
         <p className={s.main_descr}>
           Front End Developer from Saint-Petersburg
         </p>
-        <a href="#" className={s.btn}>
-          Contact me
-        </a>
+        <Btn value={"Contact me"} />
       </div>
     </section>
   );

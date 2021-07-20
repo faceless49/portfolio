@@ -1,0 +1,11 @@
+@import './../../sass/vars';
+
+
+.title {
+  color: $maincolor;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 40px;
+  font-size: 3.3rem;
+  line-height: 2.7rem;
+}
