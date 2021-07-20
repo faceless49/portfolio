@@ -23,9 +23,6 @@ function App() {
               <a>Work</a>
             </li>
             <li className={s.menu_item}>
-              <a>Blog</a>
-            </li>
-            <li className={s.menu_item}>
               <a>Contact</a>
             </li>
           </ul>
@@ -81,6 +78,32 @@ function App() {
           <li></li>
           <li></li>
           <li></li>
+        </div>
+      </section>
+      <section className={s.about}>
+        <div className={s.about_inner}>
+          <div className={s.about_column}>
+            <h2 className="title">About me</h2>
+            <p className={s.about_descr}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              recusandae, expedita alias impedit, tenetur, illum nobis
+              reiciendis totam corrupti reprehenderit quisquam consectetur
+              libero voluptatibus porro veritatis nulla eligendi deleniti velit.
+            </p>
+            <p className={s.about_descr}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              recusandae, expedita alias impedit, tenetur, illum nobis
+              reiciendis totam corrupti reprehenderit quisquam consectetur
+              libero voluptatibus porro veritatis nulla eligendi deleniti velit.
+            </p>
+            <p className={s.about_descr}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              recusandae, expedita alias impedit, tenetur, illum nobis
+              reiciendis totam corrupti reprehenderit quisquam consectetur
+              libero voluptatibus porro veritatis nulla eligendi deleniti velit.
+            </p>
+          </div>
+          <div className={s.about_skills}></div>
         </div>
       </section>
     </div>
