@@ -1,7 +1,15 @@
+@import './../../sass/vars';
+
 .work {
   &_inner {
     display: flex;
     justify-content: space-between;
     align-items: center
+  }
+  &_descr {
+    max-width: 800px;
+  }
+  .link {
+    color: $secondaryColor;
   }
 }

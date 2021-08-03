@@ -8,10 +8,8 @@ export const Work = () => {
         <div className={s.work_column}>
           <Title value={"My portfolio"} />
           <p className={s.work_descr}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-            dicta culpa atque accusantium repellat id temporibus doloribus
-            pariatur placeat quia fugiat, nulla, architecto hic sunt at eius?
-            Incidunt, eveniet eligendi!
+            A small gallery of recent projects.
+            Visit <a className={s.link} href={'https://github.com/faceless49'}>my work</a> page.
           </p>
         </div>
         <Btn value={"See github!"} />
