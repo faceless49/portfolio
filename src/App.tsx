@@ -9,6 +9,7 @@ import {Contact} from './components/contact/Contact';
 
 
 function App() {
+  console.log('render')
   return (
     <BrowserRouter>
       <div className={s.App}>

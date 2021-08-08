@@ -41,7 +41,7 @@ class TagCloud extends React.Component {
             </p>
           </canvas>
         </div>
-        <div id="tags">
+        <div id="tags" style={{display: 'none'} }>
           <ul>
             <li>
               <a href="/">GitHub</a>
