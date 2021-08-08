@@ -1,6 +1,9 @@
 import React from "react";
 import s from "../main/Main.module.scss";
 import { Btn } from "../../ui/btn/Btn";
+// @ts-ignore
+import DancingLines from 'react-dancing-lines'
+
 
 export const Main = () => {
   return (

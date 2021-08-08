@@ -6,6 +6,8 @@ import {Main} from './components/main/Main';
 import {Work} from './components/work/Work';
 import {About} from './components/about/About';
 import {Contact} from './components/contact/Contact';
+// @ts-ignore
+import DancingLines from 'react-dancing-lines'
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
         <Work/>
         <About/>
         <Contact/>
+        <DancingLines></DancingLines>
       </div>
+
     </BrowserRouter>
   );
 }
