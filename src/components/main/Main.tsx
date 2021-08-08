@@ -4,7 +4,6 @@ import { Btn } from "../../ui/btn/Btn";
 // @ts-ignore
 import DancingLines from 'react-dancing-lines'
 
-
 export const Main = () => {
   return (
     <section className={s.main}>
@@ -22,6 +21,8 @@ export const Main = () => {
         </p>
         <Btn value={"Contact me"} />
       </div>
+      <DancingLines></DancingLines>
     </section>
   );
 };
+

@@ -1,6 +1,7 @@
 import s from './About.module.scss'
 import React from 'react';
 import {Title} from '../../ui/title/Title';
+import TechStack from '../techStack/TechStack';
 
 
 export const About = (props: any) => {
@@ -24,7 +25,9 @@ export const About = (props: any) => {
             </p>
           </div>
         </div>
-        <div className={s.about_skills}></div>
+        <div className={s.about_skills}>
+          <TechStack/>
+        </div>
       </div>
     </section>
   );
