@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a0f5d551.chunk.css",
-    "main.js": "/portfolio/static/js/main.8e013602.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.8e013602.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.b8182f07.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.b8182f07.js.map",
-    "static/js/2.ee924fe7.chunk.js": "/portfolio/static/js/2.ee924fe7.chunk.js",
-    "static/js/2.ee924fe7.chunk.js.map": "/portfolio/static/js/2.ee924fe7.chunk.js.map",
-    "static/js/3.8c2d3357.chunk.js": "/portfolio/static/js/3.8c2d3357.chunk.js",
-    "static/js/3.8c2d3357.chunk.js.map": "/portfolio/static/js/3.8c2d3357.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.d08b5083.chunk.css",
+    "main.js": "/portfolio/static/js/main.7a02a716.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7a02a716.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.cb4b8653.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.cb4b8653.js.map",
+    "static/js/2.7a45529d.chunk.js": "/portfolio/static/js/2.7a45529d.chunk.js",
+    "static/js/2.7a45529d.chunk.js.map": "/portfolio/static/js/2.7a45529d.chunk.js.map",
+    "static/js/3.d3f94cfe.chunk.js": "/portfolio/static/js/3.d3f94cfe.chunk.js",
+    "static/js/3.d3f94cfe.chunk.js.map": "/portfolio/static/js/3.d3f94cfe.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.a0f5d551.chunk.css.map": "/portfolio/static/css/main.a0f5d551.chunk.css.map",
-    "static/js/2.ee924fe7.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ee924fe7.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/portfolio/static/media/CoolveticaRg-Regular.d90557c0.woff2"
+    "static/css/main.d08b5083.chunk.css.map": "/portfolio/static/css/main.d08b5083.chunk.css.map",
+    "static/js/2.7a45529d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.7a45529d.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/portfolio/static/media/CoolveticaRg-Regular.d90557c0.woff2",
+    "static/media/proj.4c71edfe.png": "/portfolio/static/media/proj.4c71edfe.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b8182f07.js",
-    "static/js/2.ee924fe7.chunk.js",
-    "static/css/main.a0f5d551.chunk.css",
-    "static/js/main.8e013602.chunk.js"
+    "static/js/runtime-main.cb4b8653.js",
+    "static/js/2.7a45529d.chunk.js",
+    "static/css/main.d08b5083.chunk.css",
+    "static/js/main.7a02a716.chunk.js"
   ]
 }
