@@ -1,12 +1,26 @@
 @import "./../../sass/mixins";
 @import "./../../sass/vars";
 
+.about {
+  .about_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .descr_wrap {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+   p + p {
+     padding: 10px 0;
+   }
+  @include pseudoTag('<p>', '</p>', -1.8, -1, -0.5);
+  &:after {
+    right: 0;
+  }
 }
-.about_descr {
-  @include pseudoTag('<p>', '</p>')
+
+.about_column {
+  max-width: 50%;
 }

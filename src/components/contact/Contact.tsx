@@ -8,10 +8,7 @@ export const Contact = (props: any) => {
       <div className={s.contact_inner}>
         <Title value={'Contact me'}/>
         <p className={s.contact_descr}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-          earum tempora sit ex? Ea cupiditate quos voluptatem, nam rem
-          rerum? Consequuntur, repudiandae neque eaque autem recusandae
-          explicabo temporibus voluptatum aut?
+          I'm looking for a full-time job.
         </p>
         <div className={s.contact_form}>
           <form action="">

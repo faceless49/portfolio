@@ -1,20 +1,27 @@
-@mixin pseudoTag($tag1,$tag2) {
+@mixin pseudoTag($tag1,$tag2,$top,$left,$bot) {
   position: relative;
   &:before {
     content: $tag1;
     position: absolute;
-    top: -3rem;
+    top: $top + rem;
     color: $tagColor;
-    left: -1rem;
+    left: $left + rem;
     font-size: 1.4rem;
     font-family: "La Belle Aurore", cursive;
   }
   &:after {
     content: $tag2;
     position: absolute;
-    bottom: -3rem;
+    bottom: $bot + rem;
     color: $tagColor;
     font-size: 1.4rem;
     font-family: "La Belle Aurore", cursive;
   }
 }
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

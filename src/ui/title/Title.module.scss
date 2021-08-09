@@ -4,11 +4,10 @@
 
 .title {
   color: $maincolor;
-  font-family: Coolvetica;
+  font-family: Coolvetica, sans-serif;
   font-weight: 400;
-  position: relative;
   margin-bottom: 40px;
   font-size: 4.3rem;
   line-height: 2.7rem;
-  @include pseudoTag('<h2>', '</h2>')
+  @include pseudoTag('<h2>', '</h2>',-2.5, -1, -2)
 }

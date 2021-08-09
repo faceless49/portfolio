@@ -1,6 +1,19 @@
 @import './../../sass/vars';
+@import './../../sass/mixins';
 
 .work {
+  position: relative;
+  height: 100vh;
+  padding: 8rem 0;
+  &:before {
+    content: "WORK";
+    position: absolute;
+    right: 2vw;
+    top: -3rem;
+    font-size: 15rem;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.05);
+  }
   &_inner {
     display: flex;
     justify-content: space-between;
@@ -11,5 +24,16 @@
   }
   .link {
     color: $secondaryColor;
+  }
+  .magic_wall {
+    margin-top: 25px;
+    display: flex;
+    div {
+      flex: 0 1 25%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }

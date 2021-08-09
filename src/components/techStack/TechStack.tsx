@@ -4,18 +4,20 @@ import React from 'react';
 
 
 class TagCloud extends React.Component {
-  constructor(props:any) {
-    super(props);
-  }
+  // constructor(props:any) {
+  //   super(props);
+  // }
 
   renderTagCloud() {
     try {
       tagCanvas.Start("myCanvas", "tags", {
         textColour: "#08fdd8",
-        outlineColour: "#ff00ff",
         reverse: true,
-        depth: 0.3,
-        maxSpeed: 0.05
+        depth: 0.1,
+        maxSpeed: 0.07,
+        outlineMethod: "none",
+        textHeight: 21,
+        wheelZoom: false,
       });
     } catch (e) {
       // something went wrong, hide the canvas container
@@ -34,7 +36,7 @@ class TagCloud extends React.Component {
     return (
       <>
         <div id="myCanvasContainer">
-          <canvas width="600" height="600" id="myCanvas">
+          <canvas width="500" height="500" id="myCanvas">
             <p>
               Anything in here will be replaced on browsers that do not support the canvas
               element
@@ -57,9 +59,6 @@ class TagCloud extends React.Component {
             </li>
             <li>
               <a href="/">React</a>
-            </li>
-            <li>
-              <a href="/">JQuery</a>
             </li>
             <li>
               <a href="/">CSS</a>

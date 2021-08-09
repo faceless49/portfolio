@@ -1,8 +1,8 @@
 import React from "react";
 import s from "../main/Main.module.scss";
 import { Btn } from "../../ui/btn/Btn";
-import DancingLines from '../../ui/asd/dancing-lines';
-
+// @ts-ignore
+import DancingLines from 'react-dancing-lines'
 export const Main = () => {
   return (
     <section className={s.main}>
@@ -20,7 +20,7 @@ export const Main = () => {
         </p>
         <Btn value={"Contact me"} />
       </div>
-      <DancingLines/>
+      <DancingLines></DancingLines>
     </section>
   );
 };
