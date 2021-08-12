@@ -1,6 +1,7 @@
 import s from './Contact.module.scss';
 import React from 'react';
 import {Title} from '../../ui/title/Title';
+import {MyMap} from '../map/Map';
 
 export const Contact = (props: any) => {
   return (
@@ -21,7 +22,10 @@ export const Contact = (props: any) => {
           </form>
         </div>
       </div>
-      <div className={s.contact_map}></div>
+      <MyMap/>
+      <div className={s.contact_map}>
+
+      </div>
     </section>
   );
 };

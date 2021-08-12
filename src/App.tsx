@@ -8,12 +8,14 @@ import {About} from './components/about/About';
 import {Contact} from './components/contact/Contact';
 // @ts-ignore
 import DancingLines from 'react-dancing-lines'
+import TestMenu from './components/testMenu/Menu';
 
 function App() {
   console.log('render')
   return (
     <BrowserRouter>
       <div className={s.App}>
+        <TestMenu/>
         <Navigation/>
         <Main/>
         <Work/>
