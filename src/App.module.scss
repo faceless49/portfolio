@@ -3,5 +3,9 @@
 
 
 .App {
-  padding: 0 3rem 8rem 5rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  @media (max-width: $mq2 + px) {
+    grid-template-columns: 1fr;
+  }
 }

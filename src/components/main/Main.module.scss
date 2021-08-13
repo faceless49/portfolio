@@ -3,8 +3,11 @@
 
 .main {
   min-height: 100vh;
-  padding: 8rem 0;
+  padding: 10rem 5rem;
   position: relative;
+  @media (max-width: $mq2 + px) {
+    //padding: 6rem 3rem;
+  }
 
   .tag {
     position: absolute;
@@ -25,6 +28,11 @@
   }
 
   &_inner {
+    @media (max-width: $mq2 + px) {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
     .title {
       font-family: Coolvetica;
       font-size: 6.5rem;

@@ -8,7 +8,7 @@ import {About} from './components/about/About';
 import {Contact} from './components/contact/Contact';
 // @ts-ignore
 import DancingLines from 'react-dancing-lines'
-import TestMenu from './components/testMenu/Menu';
+import TestMenu from './components/menu/Menu';
 
 function App() {
   console.log('render')

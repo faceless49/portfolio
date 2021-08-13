@@ -2,10 +2,16 @@
 @import "./../../sass/vars";
 
 .about {
+  padding: 8rem 5rem;
+  @media (max-width: $mq2 + px) {
+    padding: 6rem 3rem;
+  }
   .about_inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+
   }
 }
 .descr_wrap {
@@ -14,6 +20,7 @@
   justify-content: space-between;
    p + p {
      padding: 10px 0;
+
    }
   @include pseudoTag('<p>', '</p>', -1.8, -1, -0.5);
   &:after {
@@ -23,4 +30,13 @@
 
 .about_column {
   max-width: 50%;
+  @media (max-width: 1100px) {
+  max-width: none;
+  }
+}
+.about_descr {
+  line-height: 1.7;
+  @media (max-width: $mq3 + px) {
+
+  }
 }

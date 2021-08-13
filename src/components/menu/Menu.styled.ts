@@ -1,5 +1,6 @@
-import styled from "styled-components";
-import { colors } from './global';
+import styled from 'styled-components';
+import {colors} from './global';
+import {isBoolean} from 'util';
 
 
 export const StyledMenu = styled.nav<{ open: boolean }>`
@@ -15,9 +16,9 @@ export const StyledMenu = styled.nav<{ open: boolean }>`
   background-color: #181818;
   z-index: 5;
   transition: transform 0.3s ease-in-out;
-  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
-
+  transform: ${({open}) => (open ? 'translateY(0)' : 'translateY(-100%)')};
 `;
+
 
 export const StyledLink = styled.a`
   text-align: center;

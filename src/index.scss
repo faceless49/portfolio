@@ -44,6 +44,10 @@ section {
 html,
 body {
   height: 100%;
+  @media (max-width: 1060px) {
+    font-size: 12px;
+
+  }
 }
 
 body {
@@ -56,9 +60,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: $bgcolor;
   color: $textColor;
-  padding-left: 13rem;
 }
 
 input::-ms-clear {

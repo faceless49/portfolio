@@ -4,20 +4,25 @@
 .work {
   position: relative;
   height: 100vh;
-  padding: 8rem 0;
+  padding: 8rem 5rem;
+  @media (max-width: $mq2 + px) {
+    padding: 6rem 3rem;
+  }
   &:before {
-    content: "WORK";
+    content: "Work";
     position: absolute;
-    right: 2vw;
-    top: -3rem;
-    font-size: 15rem;
+    right: 6vw;
+    top: 4rem;
+    font-size: 17rem;
+    font-weight: 700;
     z-index: -1;
     color: rgba(255, 255, 255, 0.05);
   }
   &_inner {
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    flex-flow: wrap;
   }
   &_descr {
     max-width: 800px;

@@ -11,7 +11,7 @@ export const Main = () => {
         <h1 className={s.title}>
           Hi,
           <br />
-          I'm Egor,
+          I’m Egor,
           <br />
           web developer
         </h1>
