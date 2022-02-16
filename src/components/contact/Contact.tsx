@@ -1,11 +1,11 @@
 import s from './Contact.module.scss';
 import React from 'react';
 import {Title} from '../../ui/title/Title';
-import {MyMap} from '../map/Map';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {fab} from '@fortawesome/free-brands-svg-icons';
 import {far} from '@fortawesome/free-regular-svg-icons';
+import {EmailForm} from './EmailForm/EmailForm';
 
 export const Contact = (props: any) => {
   library.add(fab)
@@ -21,7 +21,7 @@ export const Contact = (props: any) => {
         </p>
 
       </div>
-      <MyMap/>
+      <EmailForm/>
       <div className={s.contact_form}>
         <a className={s.social_link} href={'https://t.me/faceless49'}><FontAwesomeIcon icon={['fab', 'telegram']} size={'2x'}/></a>
         <a className={s.social_link} href={'https://www.linkedin.com/in/egor-kolesnikov'}><FontAwesomeIcon icon={['fab', 'linkedin']} size={'2x'}/></a>

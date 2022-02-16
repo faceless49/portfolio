@@ -3,7 +3,7 @@ import {BrowserRouter} from 'react-router-dom';
 import s from './App.module.scss';
 import {Navigation} from './components/navigation/Navigation';
 import {Main} from './components/main/Main';
-import {Work} from './components/work/Work';
+import {Works} from './components/works/Works';
 import {About} from './components/about/About';
 import {Contact} from './components/contact/Contact';
 // @ts-ignore
@@ -18,7 +18,7 @@ function App() {
         <TestMenu/>
         <Navigation/>
         <Main/>
-        <Work/>
+        <Works/>
         <About/>
         <Contact/>
         <DancingLines></DancingLines>

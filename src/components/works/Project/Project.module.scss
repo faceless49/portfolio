@@ -1,0 +1,83 @@
+@import "src/sass/vars";
+@import "src/sass/mixins";
+.magic_wall_item {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  height: 300px;
+  background-color: #d6d6d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: $bgcolor;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+  }
+}
+
+.viewBtn {
+  color: $maincolor;
+  border: 1px solid $maincolor;
+  background-color: $bgcolor;
+  font-size: 16px;
+  letter-spacing: 4px;
+  position: relative;
+  width: 40%;
+  line-height: 35px;
+  text-align: center;
+  z-index: 5;
+  opacity: 0.7;
+
+  &:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    right: 0;
+    bottom: 0;
+    background: $maincolor;
+    position: absolute;
+    transition: .3s ease-out all;
+    z-index: 5;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: $maincolor;
+    transition: all 0.35s ease;
+  }
+
+  &:hover {
+    color: $bgcolor;
+  }
+
+  &:hover:before {
+    left: 0;
+    width: 100%;
+  }
+
+  &:active {
+    top: 2px;
+  }
+}
+.subtitle_wrapper {
+  @include flexCenter;
+  flex-direction: column;
+}

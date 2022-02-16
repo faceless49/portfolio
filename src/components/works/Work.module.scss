@@ -1,0 +1,41 @@
+@import './../../sass/vars';
+@import './../../sass/mixins';
+
+.work {
+  position: relative;
+  height: 100vh;
+  padding: 8rem 5rem;
+  @media (max-width: $mq2 + px) {
+    padding: 6rem 3rem;
+  }
+  &:before {
+    content: "Work";
+    position: absolute;
+    right: 17vw;
+    top: 2rem;
+    font-size: 17rem;
+    font-weight: 700;
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.05);
+  }
+  &_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+  }
+  &_descr {
+    max-width: 800px;
+  }
+  .link {
+    color: $secondaryColor;
+  }
+}
+
+.magic_wall {
+  border: 1px solid red;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,23 @@
+.contactsBlock {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactForm {
+  width: 50%;
+  background-color: #d6d6d6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactForm input, .contactForm textarea {
+  width: 100%;
+}
+
+.submitBtn {
+  padding: 10px 20px;
+  background-color: #eeeef5;
+}

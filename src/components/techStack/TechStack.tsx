@@ -17,7 +17,6 @@ class TagCloud extends React.Component {
         wheelZoom: false,
       });
     } catch (e) {
-      // something went wrong, hide the canvas container
       // @ts-ignore
       document.getElementById("myCanvasContainer").style.display = "none";
     }
@@ -82,9 +81,6 @@ class TagCloud extends React.Component {
               </li>
               <li>
                 <a href="/">BEM</a>
-              </li>
-              <li>
-                <a href="/">Progressive Web Apps</a>
               </li>
             </ul>
           </div>
