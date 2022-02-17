@@ -4,6 +4,14 @@
 .about {
   min-height: 100vh;
   @include flexCenter;
+  position: relative;
+  @include pseudoTag('<section>', '</section>', -0.8, -1, -1.5);
+  &:before {
+    left: 1rem;
+  }
+  &:after {
+    right: 4rem;
+  }
   .about_inner {
     display: flex;
     justify-content: space-between;

@@ -1,5 +1,5 @@
 @import "./../../sass/_vars";
-
+@import "./../../sass/mixins";
 
 .main {
   min-height: 100vh;
@@ -12,11 +12,11 @@
     color: $tagColor;
     left: 4rem;
     font-size: 1.4rem;
-    font-family: 'La Belle Aurore', cursive;
+    font-family: "La Belle Aurore", cursive;
 
     &:after {
-      content: '<body>';
-      font-family: 'La Belle Aurore', cursive;
+      content: "<body>";
+      font-family: "La Belle Aurore", cursive;
       color: $tagColor;
       position: absolute;
       top: 2rem;
@@ -79,6 +79,8 @@
         font-size: 1.4rem;
         font-family: "La Belle Aurore", cursive;
       }
-      }
     }
   }
+}
+
+@include rubberAnimation;

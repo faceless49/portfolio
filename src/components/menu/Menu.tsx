@@ -13,8 +13,9 @@ const Menu = () => {
   useOnClickOutside(node, () => setOpen(false));
 
   return (
-    <div ref={node} style={{position: 'absolute'}}>
+    <div ref={node} style={{ position: "absolute" }}>
       <StyledMenu open={open}>
+        <StyledLink onClick={() => close()}>Main</StyledLink>
         <StyledLink onClick={() => close()}>About</StyledLink>
         <StyledLink onClick={() => close()}>My Skills</StyledLink>
         <StyledLink onClick={() => close()}>Work</StyledLink>

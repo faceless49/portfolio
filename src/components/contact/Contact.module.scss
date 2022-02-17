@@ -1,10 +1,20 @@
-@import './src/sass/vars';
+@import "./src/sass/vars";
+@import "./src/sass/mixins";
 
 .contact {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  padding: 4rem 0;
+  position: relative;
+  @include pseudoTag("<section>", "</section>", -0.8, -1, -1.5);
+  &:before {
+    left: 1rem;
+  }
+  &:after {
+    right: 4rem;
+  }
   &_inner {
     padding: 1rem;
     display: flex;
@@ -15,18 +25,17 @@
   &_descr {
     font-size: 1.6rem;
     padding: 3rem 0;
+    @include pseudoTag("<p>", "</p>", 0.2, -1, 0.5);
   }
   @media (max-width: $mq2 + px) {
     padding: 6rem 3rem;
   }
-
 
   &_form {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-
   }
   .social_link {
     text-decoration: none;
@@ -36,7 +45,7 @@
       color: $maincolor;
       transition: color 0.3s ease;
     }
-   }
+  }
   a + a {
     margin-left: 20px;
   }

@@ -1,5 +1,5 @@
-@import './src/sass/vars';
-@import './src/sass/mixins';
+@import "./src/sass/vars";
+@import "./src/sass/mixins";
 .contactsBlock {
   display: flex;
   align-items: center;
@@ -9,12 +9,14 @@
 }
 .contactForm {
   position: relative;
-  @include pseudoTag('<form>', '</form>', -2.8, -1, 1.5);
+  z-index: 50;
+  @include pseudoTag("<form>", "</form>", -2.8, -1, 1.5);
   &:after {
     right: 2rem;
   }
 }
-.contactForm input[type='text'], input[type="email"]{
+.contactForm input[type="text"],
+input[type="email"] {
   width: 100%;
   border: 0;
   background: #2b2b2b;
@@ -25,7 +27,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  &:focus  {
+  &:focus {
     outline: 1px solid $maincolor;
   }
 }
@@ -38,20 +40,21 @@
   color: #8d8d8d;
   padding: 20px;
   min-height: 150px;
-  &:focus  {
+  &:focus {
     outline: 1px solid $maincolor;
   }
 }
 .inputField {
   margin-bottom: 10px;
+  &:focus::placeholder {
+    color: transparent;
+  }
 }
-
 
 .submitBtn {
   padding: 10px 20px;
   background-color: #eeeef5;
 }
-
 
 .inputLabel {
   position: relative;
@@ -69,6 +72,4 @@
   //    transform: translate3d(-100%, 0, 0);
   //    transition: transform 0.3s;
   //  }
-  }
-
-
+}

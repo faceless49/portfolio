@@ -1,5 +1,5 @@
-@import './../../sass/vars';
-@import './../../sass/mixins';
+@import "./../../sass/vars";
+@import "./../../sass/mixins";
 
 .work {
   position: relative;
@@ -7,8 +7,8 @@
   &:before {
     content: "Work";
     position: absolute;
-    right: 17vw;
-    top: 2rem;
+    right: 25vw;
+    top: -5rem;
     font-size: 17rem;
     font-weight: 700;
     z-index: -1;
@@ -19,7 +19,7 @@
     justify-content: space-between;
     align-items: center;
     flex-flow: wrap;
-    padding: 20px 0;
+    padding: 50px 0;
   }
   &_descr {
     font-size: 1.6rem;
@@ -32,16 +32,24 @@
 .magic_wall {
   display: flex;
   flex-wrap: wrap;
-  margin: -5px -10px;
+  margin: 0px -10px;
+  position: relative;
+  @include pseudoTag("<section>", "</section>", -2.8, -1, -1.5);
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 2rem;
+  }
 }
 .magic_wall_column {
   flex: 0 0 33%;
   padding: 5px 10px;
 
   @media (max-width: $mq3+px) {
-    flex: 0 0 50%
+    flex: 0 0 50%;
   }
   @media (max-width: $mq4+px) {
-    flex: 0 0 100%
+    flex: 0 0 100%;
   }
 }

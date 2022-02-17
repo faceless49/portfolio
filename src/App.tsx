@@ -12,6 +12,8 @@ import TestMenu from './components/menu/Menu';
 
 function App() {
   console.log('render')
+
+
   return (
     <BrowserRouter>
       <div className={s.App}>
@@ -21,7 +23,8 @@ function App() {
         <Works/>
         <About/>
         <Contact/>
-        <DancingLines></DancingLines>
+
+        <DancingLines/>
       </div>
     </BrowserRouter>
   );

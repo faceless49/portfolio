@@ -15,19 +15,30 @@ $mq4: 575.98;
 // * Container
 
 .container {
-  padding: 0 15px; 
-  @media (min-width:$mq4+px){
-       padding: 0 35px; 
+  padding: 20px 15px;
+  @media (min-width: $mq4+px) {
+    padding: 0 35px;
   }
-  @media (min-width:$mq3+px){
-       padding: 0 50px; 
+  @media (min-width: $mq3+px) {
+    padding: 0 50px;
   }
-  @media (min-width:$mq2+px){
-       padding: 0 70px; 
-       width: 100%;
-       margin: 0 auto;
+  @media (min-width: $mq2+px) {
+    padding: 0 70px;
+    width: 100%;
+    margin: 0 auto;
   }
-  @media (min-width:$mq1+px){
-        padding: 0 150px; 
+  @media (min-width: $mq1+px) {
+    padding: 0 150px;
+  }
+}
+
+.rubber {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  display: inline-block;
+  &:hover {
+    color: $maincolor;
+    animation-name: rubberBand;
   }
 }
