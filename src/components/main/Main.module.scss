@@ -5,6 +5,11 @@
   min-height: 100vh;
   padding: 15rem 0;
   position: relative;
+  @media (max-width: $mq3+px) {
+  padding: 5rem 0;
+  }  @media (max-width: $mq4+px) {
+  padding: 2rem 0;
+}
 
   .tag {
     position: absolute;
@@ -35,6 +40,14 @@
       font-size: 6.5rem;
       line-height: 7rem;
       position: relative;
+      @media (max-width: $mq3+px) {
+        font-size: 4.5rem;
+      }
+      @media (max-width: $mq4+px) {
+        font-size: 2.5rem;
+        line-height: 5rem;
+      }
+
       &:before {
         content: "<h1>";
         position: absolute;

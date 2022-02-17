@@ -5,12 +5,15 @@
   min-height: 100vh;
   @include flexCenter;
   position: relative;
-  @include pseudoTag('<section>', '</section>', -0.8, -1, -1.5);
+  @include pseudoTag("<section>", "</section>", -0.8, -1, -1.5);
   &:before {
     left: 1rem;
   }
   &:after {
     right: 4rem;
+  }
+  @media (max-width: $mq3+px) {
+    padding: 4rem 0;
   }
   .about_inner {
     display: flex;
@@ -24,26 +27,27 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 5rem 0;
-   p + p {
-     padding: 10px 0;
-
-   }
-  @include pseudoTag('<p>', '</p>', -0.8, -1, -0.5);
+  p + p {
+    padding: 10px 0;
+  }
+  @include pseudoTag("<p>", "</p>", -0.8, -1, -0.5);
   &:after {
     right: 2rem;
   }
+
 }
 
 .about_column {
-  max-width: 50%;
-  @media (max-width: 1100px) {
-  max-width: none;
+  flex: 0 0 50%;
+  @media (max-width: $mq2+px) {
+    flex: 0 0 100%;
   }
 }
 .about_descr {
   line-height: 1.7;
   font-size: 1.6rem;
   @media (max-width: $mq3 + px) {
-
+    font-size: 1.2rem;
   }
+
 }

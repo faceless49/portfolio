@@ -27,18 +27,6 @@ export const Navigation = (props: any) => {
           <li className={s.menu_item}>
             <Link
               className={s.menu_link}
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              About
-            </Link>
-          </li>
-          <li className={s.menu_item}>
-            <Link
-              className={s.menu_link}
               to="work"
               spy={true}
               smooth={true}
@@ -48,6 +36,19 @@ export const Navigation = (props: any) => {
               Work
             </Link>
           </li>
+          <li className={s.menu_item}>
+            <Link
+              className={s.menu_link}
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              About
+            </Link>
+          </li>
+
           <li className={s.menu_item}>
             <Link
               className={s.menu_link}

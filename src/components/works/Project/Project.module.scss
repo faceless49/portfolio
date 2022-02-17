@@ -2,7 +2,7 @@
 @import "src/sass/mixins";
 
 .image {
-  min-height: 450px;
+  min-height: 350px;
   background-color: #d6d6d6;
   display: flex;
   justify-content: center;
@@ -10,6 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  background-position: center;
   &:before {
     content: "";
     position: absolute;
@@ -20,6 +21,13 @@
     bottom: 0;
     opacity: 0.4;
   }
+  @media (max-width: $mq2+px) {
+    min-height: 220px;
+  }
+  @media (max-width: $mq3+px) {
+    min-height: 350px;
+  }
+
 }
 
 .viewBtn {
@@ -78,4 +86,12 @@
   flex-direction: column;
   font-size: 1.2rem;
   background-color: rgba(29, 29, 29, 0.3);
+  @media (max-width: $mq3+px) {
+    font-size: 1.6rem;
+  }@media (max-width: $mq4+px) {
+    font-size: 2rem;
+  }
+}
+.description {
+  text-align: center;
 }

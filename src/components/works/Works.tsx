@@ -53,7 +53,6 @@ export const Works = () => {
           <div className={s.work_inner}>
             <div className={s.work_column}>
               <Title>
-                {" "}
                 {portfolioTitle.map((item, i) => (
                   <Letter key={i}>{item}</Letter>
                 ))}
@@ -62,7 +61,7 @@ export const Works = () => {
                 A small gallery of recent projects. Visit{" "}
                 <a className={s.link} href={"https://github.com/faceless49"}>
                   my work
-                </a>{" "}
+                </a>
                 page.
               </p>
             </div>

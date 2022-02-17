@@ -30,12 +30,18 @@
   @media (max-width: $mq2 + px) {
     padding: 6rem 3rem;
   }
+  @media (max-width: $mq4 + px) {
+    padding: 3.5rem 0rem;
+  }
 
   &_form {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 2rem;
+    @media (max-width: $mq4+px) {
+      margin-top: 4rem;
+    }
   }
   .social_link {
     text-decoration: none;

@@ -31,8 +31,8 @@ class TagCloud extends React.Component {
   render() {
     return (
       <>
-        <div id="myCanvasContainer">
-          <canvas width="800" height="500" id="myCanvas"></canvas>
+        <div id="myCanvasContainer" className={s.technologies}>
+          <canvas width="400px" height="400px" id="myCanvas"></canvas>
         </div>
         <div id="tags" style={{ display: "none" }}>
           <ul>

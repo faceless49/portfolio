@@ -3,7 +3,7 @@
 
 .work {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   &:before {
     content: "Work";
     position: absolute;
@@ -27,6 +27,7 @@
   .link {
     color: $secondaryColor;
   }
+
 }
 
 .magic_wall {
@@ -46,10 +47,10 @@
   flex: 0 0 33%;
   padding: 5px 10px;
 
-  @media (max-width: $mq3+px) {
+  @media (max-width: $mq2+px) {
     flex: 0 0 50%;
   }
-  @media (max-width: $mq4+px) {
+  @media (max-width: $mq3+px) {
     flex: 0 0 100%;
   }
 }

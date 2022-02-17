@@ -12,7 +12,7 @@ export const StyledMenu = styled.nav<{ open: boolean }>`
   justify-content: center;
   align-items: center;
   background-color: #181818;
-  z-index: 5;
+  z-index: 5555555555;
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? "translateY(0)" : "translateY(-100%)")};
 `;
@@ -25,7 +25,7 @@ export const StyledLink = styled.a`
   line-height: 5rem;
   cursor: pointer;
   border-bottom: 1px solid #282828;
-  z-index: 5;
+  z-index: 5555555555;
 
   :hover {
     color: ${colors.maincolor};
