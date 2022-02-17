@@ -1,13 +1,8 @@
 @import "src/sass/vars";
 @import "src/sass/mixins";
-.magic_wall_item {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-}
 
 .image {
-  height: 300px;
+  min-height: 450px;
   background-color: #d6d6d6;
   display: flex;
   justify-content: center;
@@ -34,7 +29,7 @@
   font-size: 16px;
   letter-spacing: 4px;
   position: relative;
-  width: 40%;
+  width: 8rem;
   line-height: 35px;
   text-align: center;
   z-index: 5;
@@ -79,5 +74,8 @@
 }
 .subtitle_wrapper {
   @include flexCenter;
+  padding: 10px 0;
   flex-direction: column;
+  font-size: 1.2rem;
+  background-color: rgba(29, 29, 29, 0.3);
 }

@@ -10,11 +10,12 @@ class TagCloud extends React.Component {
       tagCanvas.Start("myCanvas", "tags", {
         textColour: "#08fdd8",
         reverse: true,
-        depth: 0.1,
-        maxSpeed: 0.07,
+        depth: 1,
+        maxSpeed: 0.09,
         outlineMethod: "none",
-        textHeight: 21,
-        wheelZoom: false,
+        textHeight: 23,
+        wheelZoom: true,
+        noSelect: false
       });
     } catch (e) {
       // @ts-ignore
@@ -32,7 +33,7 @@ class TagCloud extends React.Component {
     return (
         <>
           <div id="myCanvasContainer">
-            <canvas width="500" height="500" id="myCanvas">
+            <canvas width="800" height="500" id="myCanvas">
             </canvas>
           </div>
           <div id="tags" style={{display: 'none'}}>
@@ -53,7 +54,7 @@ class TagCloud extends React.Component {
                 <a href="/">React</a>
               </li>
               <li>
-                <a href="/">CSS</a>
+                <a href="/">Redux</a>
               </li>
               <li>
                 <a href="/">HTML</a>
@@ -65,7 +66,7 @@ class TagCloud extends React.Component {
                 <a href="/">REST</a>
               </li>
               <li>
-                <a href="/">Gulp</a>
+                <a href="/">Redux-thunk</a>
               </li>
               <li>
                 <a href="/">Unit Tests</a>
@@ -80,7 +81,7 @@ class TagCloud extends React.Component {
                 <a href="/">NodeJS</a>
               </li>
               <li>
-                <a href="/">BEM</a>
+                <a href="/">Redux Toolkit</a>
               </li>
             </ul>
           </div>

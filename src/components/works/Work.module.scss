@@ -4,10 +4,6 @@
 .work {
   position: relative;
   height: 100vh;
-  padding: 8rem 5rem;
-  @media (max-width: $mq2 + px) {
-    padding: 6rem 3rem;
-  }
   &:before {
     content: "Work";
     position: absolute;
@@ -23,9 +19,10 @@
     justify-content: space-between;
     align-items: center;
     flex-flow: wrap;
+    padding: 20px 0;
   }
   &_descr {
-    max-width: 800px;
+    font-size: 1.6rem;
   }
   .link {
     color: $secondaryColor;
@@ -33,9 +30,18 @@
 }
 
 .magic_wall {
-  border: 1px solid red;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  margin: -5px -10px;
+}
+.magic_wall_column {
+  flex: 0 0 33%;
+  padding: 5px 10px;
+
+  @media (max-width: $mq3+px) {
+    flex: 0 0 50%
+  }
+  @media (max-width: $mq4+px) {
+    flex: 0 0 100%
+  }
 }

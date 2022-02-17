@@ -8,6 +8,7 @@ import quizImage from './../../assets/image/quiz.jpg'
 import inviteBookImg from './../../assets/image/invite.jpeg'
 import helyFlyImg from './../../assets/image/helyfly.jpg'
 import blogImg from './../../assets/image/blog.jpg'
+
 export const Works = () => {
 
   const quiz = {
@@ -32,23 +33,50 @@ export const Works = () => {
 
   return (
     <section className={s.work}>
-      <div className={s.work_inner}>
-        <div className={s.work_column}>
-          <Title value={'My portfolio'}/>
-          <p className={s.work_descr}>
-            A small gallery of recent projects.
-            Visit <a className={s.link} href={'https://github.com/faceless49'}>my work</a> page.
-          </p>
+      <div className={'container'}>
+        <div className={s.work_wrapper}>
+          <div className={s.work_inner}>
+            <div className={s.work_column}>
+              <Title value={'My portfolio'}/>
+              <p className={s.work_descr}>
+                A small gallery of recent projects.
+                Visit <a className={s.link} href={'https://github.com/faceless49'}>my work</a> page.
+              </p>
+            </div>
+            <Btn value={'See github!'}/>
+          </div>
+          <div className={s.magic_wall}>
+            <div className={s.magic_wall_column}>
+              <Project style={todolist} title="Todolist"
+                       description={'Todolist with Material UI'}
+                       href={'https://faceless49.github.io/todolist/'}/>
+            </div>
+            <div className={s.magic_wall_column}>
+              <Project style={quiz} title="Quiz" description={'Learn JS Cards'}
+                       href={'https://faceless49.github.io/cards/'}/>
+            </div>
+            <div className={s.magic_wall_column}>
+              <Project style={socialNetwork} title="Social Network"
+                       description={'Classic social network with classes'}
+                       href={'https://faceless49.github.io/socialNetwork/'}/>
+            </div>
+            <div className={s.magic_wall_column}>
+              <Project style={invitebook} title="Invitebook"
+                       description={'Light invitebook for training'}
+                       href={'https://faceless49.github.io/invitebook/'}/>
+            </div>
+            <div className={s.magic_wall_column}>
+              <Project style={helyfly} title="HelyFly"
+                       description={'Only Responsive Markup Project'}
+                       href={'https://faceless49.github.io/helyfly/'}/>
+            </div>
+            <div className={s.magic_wall_column}>
+              <Project style={miniBlog} title="Miniblog"
+                       description={'Miniblog with MockAPI'}
+                       href={'https://faceless49.github.io/mini-blog/'}/>
+            </div>
+          </div>
         </div>
-        <Btn value={'See github!'}/>
-      </div>
-      <div className={s.magic_wall}>
-      <Project style={todolist} title='Todolist' description={'Todolist with Material UI'} href={'https://faceless49.github.io/todolist/'}/>
-      <Project style={quiz} title='Quiz' description={'Learn JS Cards'} href={'https://faceless49.github.io/cards/'}/>
-      <Project style={socialNetwork} title='Social Network' description={'Classic social network with classes'} href={'https://faceless49.github.io/socialNetwork/'}/>
-      <Project style={invitebook} title='Invitebook' description={'Light invitebook for training'} href={'https://faceless49.github.io/invitebook/'}/>
-      <Project style={helyfly} title='HelyFly' description={'Only Responsive Markup Project'} href={'https://faceless49.github.io/helyfly/'}/>
-      <Project style={miniBlog} title='Miniblog' description={'Miniblog with MockAPI'} href={'https://faceless49.github.io/mini-blog/'}/>
       </div>
     </section>
   );

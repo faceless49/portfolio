@@ -3,11 +3,8 @@
 
 .main {
   min-height: 100vh;
-  padding: 10rem 5rem;
+  padding: 15rem 0;
   position: relative;
-  @media (max-width: $mq2 + px) {
-    //padding: 6rem 3rem;
-  }
 
   .tag {
     position: absolute;
@@ -58,16 +55,16 @@
     }
 
     .main_descr {
-      font-size: 0.9rem;
+      font-size: 1.2rem;
       letter-spacing: 3px;
-      margin-top: 2rem;
+      margin: 6rem 0;
       display: block;
       color: #8d8d8d;
       position: relative;
       &:before {
         content: "<p>";
         position: absolute;
-        top: -2rem;
+        top: -3rem;
         color: $tagColor;
         left: -1rem;
         font-size: 1.4rem;
@@ -77,7 +74,7 @@
         content: "</p>";
         position: absolute;
         left: -1rem;
-        bottom: -2rem;
+        bottom: -3rem;
         color: $tagColor;
         font-size: 1.4rem;
         font-family: "La Belle Aurore", cursive;

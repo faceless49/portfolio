@@ -1,8 +1,6 @@
 @import "./../../sass/_vars";
-
-
 .navigation_wrap {
-  width: 10rem;
+  width: 12rem;
   height: 100vh;
   position: sticky;
   left: 0;
@@ -19,8 +17,8 @@
   }
 
   .logo {
-    width: 273px;
     height: 42px;
+    padding: 10px 0;
   }
 
   .menu {
@@ -34,7 +32,7 @@
     &_item {
       text-align: center;
       display: block;
-      font-size: 1rem;
+      font-size: 1.4rem;
       color: #909096;
       line-height: 5rem;
       border-bottom: 1px solid #282828;

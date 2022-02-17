@@ -1,12 +1,17 @@
 import s from './EmailForm.module.scss'
+import {Btn} from '../../../ui/btn/Btn';
+
 export const EmailForm = () => {
+
   return (
     <div className={s.contactsBlock}>
       <form className={s.contactForm}>
-        <input type="text"/>
-        <input type="text"/>
-        <textarea/>
-        <button type="submit" className={s.submitBtn}>Send message</button>
+
+        <label title={'name'} className={s.inputLabel}><input type="text" className={`${s.inputField}`} placeholder={'Name'} id={'name'}/></label>
+        <label className={s.inputLabel}><input type="text" className={s.inputField} placeholder={'Subject'}/></label>
+        <label className={s.inputLabel}><input type="text" className={s.inputField} placeholder={'Email'}/></label>
+        <textarea placeholder={'Message'}/>
+        <Btn value={'Send message'}/>
       </form>
     </div>
   );

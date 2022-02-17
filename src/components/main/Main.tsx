@@ -8,17 +8,18 @@ export const Main = () => {
     <section className={s.main}>
       <span className={s.tag}>/html</span>
       <div className={s.main_inner}>
-        <h1 className={s.title}>
+        <div className={'container'}><h1 className={s.title}>
           Hi,
-          <br />
+          <br/>
           I’m Egor,
-          <br />
+          <br/>
           web developer
         </h1>
-        <p className={s.main_descr}>
-          Front End Developer from Saint-Petersburg
-        </p>
-        <Btn value={"Contact me"} />
+          <p className={s.main_descr}>
+            Front End Developer from Saint-Petersburg
+          </p>
+          <Btn value={'Contact me'}/>
+        </div>
       </div>
       <DancingLines></DancingLines>
     </section>

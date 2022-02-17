@@ -3,11 +3,9 @@ import logo from './../../assets/kolesnikov-01.svg'
 export const Navigation = (props: any) => {
   return (
     <div className={s.navigation_wrap}>
-      <div className={s.navigation_header}>
         <a href="#" className={s.nav_link}>
           <img src={logo} alt="" className={s.logo} />
         </a>
-      </div>
 
       <nav className={s.menu}>
         <ul className={s.menu_list}>

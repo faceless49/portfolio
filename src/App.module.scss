@@ -4,7 +4,7 @@
 
 .App {
   display: grid;
-  grid-template-columns: 10rem 1fr;
+  grid-template-columns: 12rem 1fr;
   @media (max-width: $mq2 + px) {
     grid-template-columns: 1fr;
   }
