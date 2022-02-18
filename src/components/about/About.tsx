@@ -4,7 +4,7 @@ import { Title } from "../../ui/title/Title";
 import TechStack from "../techStack/TechStack";
 import { Letter } from "../../ui/letter/Letter";
 
-export const About = (props: any) => {
+export const About = () => {
   const myself = [
     "M",
     "e,",
@@ -33,7 +33,7 @@ export const About = (props: any) => {
                 <Letter key={i}>{item}</Letter>
               ))}
             </Title>
-            <div className={s.descr_wrap}>
+            <div className={s.about_wrap}>
               <p className={s.about_descr}>
                 I'm a Front-End Developer for Saint-Petersburg, Russia.
               </p>

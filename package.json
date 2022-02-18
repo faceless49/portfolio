@@ -19,6 +19,7 @@
     "@types/react-scroll": "^1.8.3",
     "@types/sass": "1.16.1",
     "@types/styled-components": "^5.1.12",
+    "axios": "^0.26.0",
     "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dancing-lines": "1.1.1",

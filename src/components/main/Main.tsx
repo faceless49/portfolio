@@ -1,23 +1,7 @@
 import React from "react";
 import s from "../main/Main.module.scss";
-import { Btn } from "../../ui/btn/Btn";
-// @ts-ignore
-import DancingLines from "react-dancing-lines";
 import { Letter } from "../../ui/letter/Letter";
-
-// const Letter = (props: any) => {
-//   // const [hovered, setHovered] = React.useState(false);
-//   // const toggleHover = () => setHovered(!hovered);
-//   return (
-//     <span
-//       className={s.rubber}
-//       // onMouseEnter={toggleHover}
-//       // onMouseLeave={toggleHover}
-//     >
-//       {props.children}
-//     </span>
-//   );
-// };
+import { Link } from "react-scroll";
 
 export const Main = () => {
   const hi = ["H", "i", ","];
@@ -59,10 +43,18 @@ export const Main = () => {
           <p className={s.main_descr}>
             Front End Developer from Saint-Petersburg
           </p>
-          <Btn value={"Contact me"} />
+          <Link
+            className={s.main_link}
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Contact
+          </Link>
         </div>
       </div>
-      <DancingLines></DancingLines>
     </section>
   );
 };

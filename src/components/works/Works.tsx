@@ -1,9 +1,8 @@
 import s from "./Work.module.scss";
-import { Btn } from "../../ui/btn/Btn";
 import { Title } from "../../ui/title/Title";
 import { Project } from "./Project/Project";
 import todolistImg from "./../../assets/image/todolist.jpg";
-import sociallNetworkImg from "./../../assets/image/social.jpg";
+import socialNetworkImg from "./../../assets/image/social.jpg";
 import quizImage from "./../../assets/image/quiz.jpg";
 import inviteBookImg from "./../../assets/image/invite.jpeg";
 import helyFlyImg from "./../../assets/image/helyfly.jpg";
@@ -34,7 +33,7 @@ export const Works = () => {
     backgroundImage: `url(${todolistImg})`,
   };
   const socialNetwork = {
-    backgroundImage: `url(${sociallNetworkImg})`,
+    backgroundImage: `url(${socialNetworkImg})`,
   };
   const helyfly = {
     backgroundImage: `url(${helyFlyImg})`,
@@ -59,13 +58,20 @@ export const Works = () => {
               </Title>
               <p className={s.work_descr}>
                 A small gallery of recent projects. Visit{" "}
-                <a className={s.link} href={"https://github.com/faceless49"}>
-                  my work
+                <a
+                  className={s.work_link}
+                  href={"https://github.com/faceless49"}
+                >
+                  my workpage.
                 </a>
-                page.
               </p>
             </div>
-            <Btn value={"See github!"} />
+            <a
+              className={s.work_link__btn}
+              href={"https://github.com/faceless49"}
+            >
+              See github!
+            </a>
           </div>
           <div className={s.magic_wall}>
             <div className={s.magic_wall_column}>

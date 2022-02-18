@@ -58,3 +58,57 @@
     }
   }
 }
+
+@mixin btn {
+  color: $maincolor;
+  border: 1px solid $maincolor;
+  background-color: transparent;
+  font-size: 16px;
+  letter-spacing: 4px;
+  margin-top: 45px;
+  position: relative;
+  width: 100%;
+  max-width: 220px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  text-align: center;
+  z-index: 1;
+
+  &:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    right: 0;
+    bottom: 0;
+    background: $maincolor;
+    position: absolute;
+    transition: 0.3s ease-out all;
+    z-index: 5;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: $maincolor;
+    transition: all 0.35s ease;
+  }
+
+  &:hover {
+    color: $bgcolor;
+  }
+
+  &:hover:before {
+    left: 0;
+    width: 100%;
+  }
+
+  &:active {
+    top: 2px;
+  }
+}

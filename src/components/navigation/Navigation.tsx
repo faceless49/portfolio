@@ -2,11 +2,24 @@ import s from "./Navigation.module.scss";
 import logo from "./../../assets/kolesnikov-01.svg";
 // @ts-ignore
 import { Link } from "react-scroll";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import { fab } from "@fortawesome/free-brands-svg-icons";
 
-export const Navigation = (props: any) => {
+import { far } from "@fortawesome/free-regular-svg-icons";
+
+export const Navigation = () => {
+  library.add(fab);
+  library.add(far);
   return (
     <div className={s.navigation_wrap}>
-      <a href="#" className={s.nav_link}>
+      <a
+        href="https://github.com/faceless49"
+        className={s.nav_link}
+        target="_blank"
+        rel="noreferrer"
+      >
         <img src={logo} alt="" className={s.logo} />
       </a>
 
@@ -64,14 +77,17 @@ export const Navigation = (props: any) => {
         </ul>
       </nav>
       <div className={s.social}>
-        <a href="#" className={s.social_link}>
-          <img src="#" alt="" className={s.social_lnk} />{" "}
+        <a
+          className={s.social_link}
+          href={"https://www.linkedin.com/in/egor-kolesnikov"}
+        >
+          <FontAwesomeIcon icon={["fab", "linkedin"]} size={"2x"} />
         </a>
-        <a href="#" className={s.social_link}>
-          <img src="#" alt="" className={s.social_tg} />{" "}
+        <a className={s.social_link} href={"https://t.me/faceless49"}>
+          <FontAwesomeIcon icon={["fab", "telegram"]} size={"2x"} />
         </a>
-        <a href="#" className={s.social_link}>
-          <img src="#" alt="" className={s.social_gh} />{" "}
+        <a className={s.social_link} href={"mailto:kolesnikov49r@gmail.com"}>
+          <FontAwesomeIcon icon={["far", "envelope"]} size={"2x"} />
         </a>
       </div>
     </div>

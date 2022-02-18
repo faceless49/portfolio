@@ -12,7 +12,12 @@ export const Project = (props: ProjectPropsType) => {
   return (
     <div className={s.magic_wall_item}>
       <div className={s.image} style={props.style}>
-        <a className={s.viewBtn} href={props.href}>
+        <a
+          className={s.viewBtn}
+          href={props.href}
+          target={"_blank"}
+          rel="noreferrer"
+        >
           View
         </a>
       </div>

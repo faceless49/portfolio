@@ -1,25 +1,10 @@
 @import "./../../sass/vars";
 
 
-.canvas_container {
-  align-self: center;
-
-}
-#myCanvasContainer {
-  align-self: center;
-  width: 500px;
-  height: 500px;
-
-}
-
 .technologies {
   width: 500px;
   height: 500px;
   @media (max-width: $mq4 + px) {
     display: none;
   }
-}
-.circle {
-  width: 500px;
-  height: 500px;
 }

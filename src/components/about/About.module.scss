@@ -5,49 +5,57 @@
   min-height: 100vh;
   @include flexCenter;
   position: relative;
-  @include pseudoTag("<section>", "</section>", -0.8, -1, -1.5);
+  @include pseudoTag("<section>", "</section>", 0.2, -1, -1.5);
   &:before {
     left: 1rem;
+    @media (max-width: $mq4+px) {
+      top: 11.2rem;
+    }
   }
   &:after {
     right: 4rem;
+    @media (max-width: $mq4+px) {
+      bottom: 6.5rem;
+    }
   }
   @media (max-width: $mq3+px) {
     padding: 4rem 0;
   }
-  .about_inner {
+  &_inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
-}
-.descr_wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 5rem 0;
-  p + p {
-    padding: 10px 0;
+  &_column {
+    flex: 0 0 50%;
+    @media (max-width: $mq2+px) {
+      flex: 0 0 100%;
+    }
   }
-  @include pseudoTag("<p>", "</p>", -0.8, -1, -0.5);
-  &:after {
-    right: 2rem;
+  &_descr {
+    line-height: 1.7;
+    font-size: 1.6rem;
+    @media (max-width: $mq3 + px) {
+      font-size: 1.2rem;
+    }
   }
-
-}
-
-.about_column {
-  flex: 0 0 50%;
-  @media (max-width: $mq2+px) {
-    flex: 0 0 100%;
+  &_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5rem 0;
+    p + p {
+      padding: 10px 0;
+    }
+    @include pseudoTag("<p>", "</p>", -0.8, 0, -0.5);
+    &:after {
+      right: 2rem;
+    }
+    &:before {
+      @media (max-width: $mq4+px) {
+        top: 2.2rem;
+      }
+    }
   }
-}
-.about_descr {
-  line-height: 1.7;
-  font-size: 1.6rem;
-  @media (max-width: $mq3 + px) {
-    font-size: 1.2rem;
-  }
-
 }

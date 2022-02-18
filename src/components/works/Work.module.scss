@@ -24,10 +24,12 @@
   &_descr {
     font-size: 1.6rem;
   }
-  .link {
+  &_link {
     color: $secondaryColor;
+    &__btn {
+      @include btn
+    }
   }
-
 }
 
 .magic_wall {
@@ -35,22 +37,23 @@
   flex-wrap: wrap;
   margin: 0px -10px;
   position: relative;
-  @include pseudoTag("<section>", "</section>", -2.8, -1, -1.5);
+  @include pseudoTag("<section>", "</section>", -1.8, 0, -1.5);
   &:before {
     left: 0;
   }
   &:after {
     right: 2rem;
   }
-}
-.magic_wall_column {
-  flex: 0 0 33%;
-  padding: 5px 10px;
+  &_column {
+    flex: 0 0 33%;
+    padding: 5px 10px;
 
-  @media (max-width: $mq2+px) {
-    flex: 0 0 50%;
-  }
-  @media (max-width: $mq3+px) {
-    flex: 0 0 100%;
+    @media (max-width: $mq2+px) {
+      flex: 0 0 50%;
+    }
+    @media (max-width: $mq3+px) {
+      flex: 0 0 100%;
+    }
   }
 }
+

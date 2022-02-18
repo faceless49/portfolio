@@ -8,7 +8,7 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 import { EmailForm } from "./EmailForm/EmailForm";
 import { Letter } from "../../ui/letter/Letter";
 
-export const Contact = (props: any) => {
+export const Contact = () => {
   const contact = ["C", "o", "n", "t", "a", "c", "t", "\u00A0", "m", "e"];
 
   library.add(fab);
