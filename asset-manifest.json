@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8b9de071.chunk.css",
-    "main.js": "/portfolio/static/js/main.dac9c767.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.dac9c767.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.da412c86.chunk.css",
+    "main.js": "/portfolio/static/js/main.c21dfa58.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c21dfa58.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.a73f1f6a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.a73f1f6a.js.map",
-    "static/js/2.f9428c8d.chunk.js": "/portfolio/static/js/2.f9428c8d.chunk.js",
-    "static/js/2.f9428c8d.chunk.js.map": "/portfolio/static/js/2.f9428c8d.chunk.js.map",
+    "static/js/2.b26cb98b.chunk.js": "/portfolio/static/js/2.b26cb98b.chunk.js",
+    "static/js/2.b26cb98b.chunk.js.map": "/portfolio/static/js/2.b26cb98b.chunk.js.map",
     "static/js/3.03993c60.chunk.js": "/portfolio/static/js/3.03993c60.chunk.js",
     "static/js/3.03993c60.chunk.js.map": "/portfolio/static/js/3.03993c60.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.8b9de071.chunk.css.map": "/portfolio/static/css/main.8b9de071.chunk.css.map",
-    "static/js/2.f9428c8d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f9428c8d.chunk.js.LICENSE.txt",
+    "static/css/main.da412c86.chunk.css.map": "/portfolio/static/css/main.da412c86.chunk.css.map",
+    "static/js/2.b26cb98b.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b26cb98b.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/portfolio/static/media/CoolveticaRg-Regular.d90557c0.woff2",
     "static/media/blog.ee5813a2.jpg": "/portfolio/static/media/blog.ee5813a2.jpg",
     "static/media/helyfly.60978971.jpg": "/portfolio/static/media/helyfly.60978971.jpg",
     "static/media/kolesnikov-01.28d987de.svg": "/portfolio/static/media/kolesnikov-01.28d987de.svg",
+    "static/media/portfolio.544fa25c.jpg": "/portfolio/static/media/portfolio.544fa25c.jpg",
     "static/media/quiz.08bc25b9.jpg": "/portfolio/static/media/quiz.08bc25b9.jpg",
     "static/media/social.f49df683.jpg": "/portfolio/static/media/social.f49df683.jpg",
     "static/media/todolist.da559413.jpg": "/portfolio/static/media/todolist.da559413.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a73f1f6a.js",
-    "static/js/2.f9428c8d.chunk.js",
-    "static/css/main.8b9de071.chunk.css",
-    "static/js/main.dac9c767.chunk.js"
+    "static/js/2.b26cb98b.chunk.js",
+    "static/css/main.da412c86.chunk.css",
+    "static/js/main.c21dfa58.chunk.js"
   ]
 }
