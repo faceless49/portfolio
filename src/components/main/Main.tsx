@@ -40,6 +40,7 @@ export const Main = () => {
               <Letter key={i}>{item}</Letter>
             ))}
           </h1>
+
           <p className={s.main_descr}>
             Front End Developer from Saint-Petersburg
           </p>

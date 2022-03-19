@@ -30,7 +30,7 @@ class TagCloud extends React.Component {
 
   render() {
     return (
-      <>
+      <div className={s.asdasd}>
         <div id="myCanvasContainer" className={s.technologies}>
           <canvas width="400px" height="400px" id="myCanvas"></canvas>
         </div>
@@ -83,7 +83,7 @@ class TagCloud extends React.Component {
             </li>
           </ul>
         </div>
-      </>
+      </div>
     );
   }
 }

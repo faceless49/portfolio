@@ -6,6 +6,7 @@ import socialNetworkImg from "./../../assets/image/social.jpg";
 import quizImage from "./../../assets/image/quiz.jpg";
 import inviteBookImg from "./../../assets/image/invite.jpeg";
 import helyFlyImg from "./../../assets/image/helyfly.jpg";
+import portfolioImg from "./../../assets/image/portfolio.jpg";
 import blogImg from "./../../assets/image/blog.jpg";
 import { Letter } from "../../ui/letter/Letter";
 import React from "react";
@@ -43,6 +44,9 @@ export const Works = () => {
   };
   const miniBlog = {
     backgroundImage: `url(${blogImg})`,
+  };
+  const portfolio = {
+    backgroundImage: `url(${portfolioImg})`,
   };
 
   return (
@@ -112,6 +116,16 @@ export const Works = () => {
                 title="HelyFly"
                 description={"Only Responsive Markup Project"}
                 href={"https://faceless49.github.io/helyfly/"}
+              />
+            </div>
+            <div className={s.magic_wall_column}>
+              <Project
+                style={portfolio}
+                title="Some Portfolio"
+                description={
+                  "With YMaps. Editable / validate: name, city. Reselect sort skills"
+                }
+                href={"https://faceless49.github.io/axet/"}
               />
             </div>
             <div className={s.magic_wall_column}>

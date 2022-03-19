@@ -33,10 +33,17 @@
 }
 
 .magic_wall {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0px -10px;
   position: relative;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr;
+  @media (max-width: $mq2+px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: $mq3+px) {
+    grid-template-columns: 1fr;
+  }
   @include pseudoTag("<section>", "</section>", -1.8, 0, -1.5);
   &:before {
     left: 0;
@@ -45,15 +52,7 @@
     right: 2rem;
   }
   &_column {
-    flex: 0 0 33%;
     padding: 5px 10px;
-
-    @media (max-width: $mq2+px) {
-      flex: 0 0 50%;
-    }
-    @media (max-width: $mq3+px) {
-      flex: 0 0 100%;
-    }
   }
 }
 
