@@ -8,6 +8,7 @@ import inviteBookImg from "./../../assets/image/invite.jpeg";
 import helyFlyImg from "./../../assets/image/helyfly.jpg";
 import portfolioImg from "./../../assets/image/portfolio.jpg";
 import blogImg from "./../../assets/image/blog.jpg";
+import formImg from "./../../assets/image/form.png";
 import { Letter } from "../../ui/letter/Letter";
 import React from "react";
 
@@ -29,6 +30,9 @@ export const Works = () => {
 
   const quiz = {
     backgroundImage: `url(${quizImage})`,
+  };
+  const form = {
+    backgroundImage: `url(${formImg})`,
   };
   const todolist = {
     backgroundImage: `url(${todolistImg})`,
@@ -134,6 +138,14 @@ export const Works = () => {
                 title="Miniblog"
                 description={"Miniblog with MockAPI"}
                 href={"https://faceless49.github.io/mini-blog/"}
+              />
+            </div>
+            <div className={s.magic_wall_column}>
+              <Project
+                style={form}
+                title="Work with form"
+                description={"Test task with form, router"}
+                href={"https://faceless49.github.io/roxxo/"}
               />
             </div>
           </div>
