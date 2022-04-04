@@ -144,8 +144,8 @@ export const Works = () => {
               <Project
                 style={form}
                 title="Work with form"
-                description={"Test task with form, router"}
-                href={"https://faceless49.github.io/roxxo/"}
+                description={"Work with user list"}
+                href={"https://faceless49.github.io/pizza-employees/"}
               />
             </div>
           </div>
